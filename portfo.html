@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="DILPREET.jpg" alt="" width="180px">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Portfolio/Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <img src="WhatsApp_Image_2024-07-22_at_21.27.41_21bdec2f-removebg-preview.png" alt="" align="right" width="380px"><br>
+            <br>
+            <br>
+            <h2>Hi, I'm <span>Dilpreet Singh Sainbhee</span><br></h2>
+            <p>a Web Developer</p>
+        </div>
+    </div>
+</div>
+<!-- -----------about-------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="WhatsApp Image 2024-07-16 at 23.16.14_5ae94805.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Dilpreet Singh Sainbhee<br>
+                🌐 Web Developer | Web Designer | Front-End Specialist
+                    Passionate about transforming ideas into digital reality, I am a dedicated web developer and designer with an experience crafting user-friendly websites. 
+                    My expertise lies in blending clean, efficient code with visually stunning design to create seamless and interactive online experiences.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Web Development</span><br>Web Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>March 2022-May2022</span><br>Worked as Graphic Designer and Social Media Handler<br>At Digital AaKar</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-present</span><br>B-Tech(Information Technology)<br>From GURU TEGH BAHADUR INSTITUTE OF TECHNOLOGY</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>I'm a passionate web designer who crafts user-friendly and visually stunning websites. 
+                    I love turning ideas into interactive experiences that captivate audiences and achieve results. 
+                    With a keen eye for design and a focus on user experience (UX), 
+                    I help businesses build a strong online presence that reflects their unique brand.</p>
+            </div>
+            <div>
+                <h2>Web Developer</h2>
+                <p>I'm an enthusiastic web developer with a strong foundation in web development principles. 
+                I'm skilled in HTML, CSS, and JavaScript, and I'm eager to learn more about advanced frameworks and technologies. 
+                I'm a quick learner with a problem-solving mindset, and I'm always looking for ways to improve my coding skills.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Screenshot 2024-07-23 182015.png">
+                <div class="layer">
+                    <h3>My Portfolio</h3>
+                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="blog.png">
+                <div class="layer">
+                    <h3>My Blogs Site</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="calc.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i><b>dssainbhee786@gmail.com</b></p>
+                <a href="ertyuio.jpg" download class="btn btn2" style="color: aliceblue;"><i class="fa-solid fa-download" style="color: aliceblue;"></i> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" onsubmit="done(event)">
+                    <input type="text" name="Name" placeholder="Your Name"  id="textInput" required>
+                    <input type="email" name="Email" placeholder="Your Email" id="textInput" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Dilpreet Singh Sainbhee.2024</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    function done(event) {
+            event.preventDefault(); 
+            const inputField = document.getElementById('textInput');
+            if (inputField.value.trim() === '') {
+                alert('Please complete the field before submitting.');
+            } else {
+                alert('Submitted!');
+            }
+        }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby72jsknWCSgktRqdLYFqsl7BrhvC3GC_0rgaYmG5laxpyhde7Ke5OpVE4mXDv3FaMp/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
